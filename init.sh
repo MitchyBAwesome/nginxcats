@@ -2,7 +2,7 @@
 
 BUCKET_CATS_DOGS="nickksun-cats-dogs/cats"
 BUCKET_UNICORN="nickksun-cats-dogs/unicorns"
-REGION="ap-southeast-2"
+REGION="us-east-1"
 PARAMETER_STORE_NAME="unicorn"
 
 SECRET_PATH=$(aws ssm get-parameters --region $REGION --name $PARAMETER_STORE_NAME --with-decryption --output text | awk '{print $4}')
