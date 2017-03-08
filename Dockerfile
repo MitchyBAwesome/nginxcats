@@ -14,4 +14,4 @@ COPY ./default.conf /etc/nginx/conf.d/default.conf
 COPY ./index.html /usr/share/nginx/html/index.html
 COPY ./app.js /usr/share/nginx/html/app.js
 COPY ./init.sh /init.sh
-CMD  /bin/bash /init.sh && rm /init.sh && nginx -g "daemon off;"
+CMD  /bin/bash /init.sh && nginx -g "daemon off;"
