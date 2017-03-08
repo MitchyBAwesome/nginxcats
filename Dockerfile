@@ -1,5 +1,4 @@
 FROM nginx
-ENV REFRESHED_AT 07-03-2017
 EXPOSE 80
 RUN apt-get update -y && \
   apt-get upgrade -y && \

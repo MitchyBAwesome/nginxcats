@@ -1,7 +1,7 @@
 #!/bin/bash
 
-BUCKET_CATS_DOGS="nickksun-cats-dogs/cats"
-BUCKET_UNICORN="nickksun-cats-dogs/unicorns"
+BUCKET_CATS_DOGS="syd-ecs-cats/cats"
+BUCKET_UNICORN="syd-ecs-cats/unicorns"
 REGION="us-east-1"
 PARAMETER_STORE_NAME="unicorn"
 
