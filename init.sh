@@ -3,7 +3,7 @@
 BUCKET_CATS_DOGS="catsndogs-assets/cats-images"
 BUCKET_UNICORN="catsndogs-assets/unicorns-images"
 
-SECRET_PATH=$(aws ssm get-parameters --region $REGION --names $PARAMETER_STORE_NAME --with-decryption --output text | awk '{print $4}')
+# SECRET_PATH=$(aws ssm get-parameters --region $REGION --names $PARAMETER_STORE_NAME --with-decryption --output text | awk '{print $4}')
 
 if [ "$SECRET_PATH" != "" ]; then echo "secret='"$SECRET_PATH"';" >> /var/www/html/app.js; fi
 
